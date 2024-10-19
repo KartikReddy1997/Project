@@ -13,7 +13,7 @@ public class AmazonCartPage {
 
 
     private final WebDriver driver;
-    @FindBy(how = How.XPATH, using="//h2[normalize-space()='Your Amazon Cart is empty']")
+    @FindBy(how = How.XPATH, using="//h3[normalize-space()='Your Amazon Cart is empty']")
     WebElement emptycart;
     public AmazonCartPage(WebDriver driver) {
 
