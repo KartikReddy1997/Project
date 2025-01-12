@@ -2,6 +2,7 @@ package StepDef;
 
 import PageObjects.AmazonHomePage;
 import PageObjects.AmazonLoginPages;
+import Variables.DataUtil;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -29,4 +30,8 @@ public class UserDetails {
     }
 
 
+    @Then("print {string}")
+    public void print(String arg0) {
+        System.out.println(DataUtil.processScenarioData(arg0));
+    }
 }

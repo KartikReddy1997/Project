@@ -1,11 +1,12 @@
 Feature: Validating the functionality of Amazon
+  Scenario : Amazon
 
 
   @D
   Scenario: User Login to Amazon application
     Given I am on Amazon application
     When User clicks on signin button
-    And Enters "9515405470" and "ABCxyz@123"
+    And Enters "phone" and "ABCxyz@123"
     Then User Should Login Successfully
 
   @DESKTOP
@@ -13,9 +14,10 @@ Feature: Validating the functionality of Amazon
     Given I am on Amazon application
     When I move to cart
     Then User should see You cart is empty
+    Then print "name"
 
 
-  @DESKTOP
+  @D
     Scenario: Adding products to cart
       Given User should see You cart is empty
       When User search for a particular "iphone 15 pro"

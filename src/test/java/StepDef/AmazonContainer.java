@@ -14,6 +14,7 @@ public class AmazonContainer extends Basepage {
     AmazonSearchPage searchPage;
 
     AmazonContainer(){
+
         driver = Basepage.getDriver();
         initPages();
     }

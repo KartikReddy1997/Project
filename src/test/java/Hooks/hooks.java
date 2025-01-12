@@ -2,6 +2,7 @@ package Hooks;
 
 import BasePage.Basepage;
 
+import Variables.DataUtil;
 import io.cucumber.java.*;
 import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
@@ -20,6 +21,17 @@ public class hooks {
 //    public static void teardown(){
 //        //Basepage.driver.quit();
 //    }
+
+
+
+
+
+    @Before
+    public void beforeScenario(Scenario scenario) {
+        DataUtil.setScenario(scenario);
+    }
+
+
 
 
     @BeforeAll

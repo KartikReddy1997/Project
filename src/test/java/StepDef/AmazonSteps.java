@@ -19,7 +19,7 @@ import java.io.ByteArrayInputStream;
 
 
 
-public class AmazonSteps extends Basepage{
+public class AmazonSteps {
 
     AmazonContainer Amazon=new AmazonContainer();
 
